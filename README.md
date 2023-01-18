@@ -1,4 +1,3 @@
-# アプリ名
 Tranning Management
 
 ## 概要
