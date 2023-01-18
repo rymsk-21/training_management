@@ -1,24 +1,24 @@
-# README
+# アプリ名
+Tranning Management
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
+その日のトレーニングを記録するアプリケーションです。
 
-Things you may want to cover:
+## 環境
+- ruby 3.1.3
+- rails 7.0.4
+- React
 
-* Ruby version
+## 開発の仕方
 
-* System dependencies
+## ディレクトリ構成
 
-* Configuration
+## 学んだ技術
 
-* Database creation
+## アプリについて
+### 洗い出した要件
 
-* Database initialization
+### 仕様
 
-* How to run the test suite
+### TODO
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
