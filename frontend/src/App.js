@@ -1,25 +1,50 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+} from "react-router-dom";
+
+// components
+import {Exercises} from "./containers/Exercises";
+import {Trainings} from "./containers/Trainings";
+import {Orders} from "./containers/Orders";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <Switch>
+                // エクササイズ一覧
+                <Route
+                    exact
+                    path="/exercises">
+                    <Exercises/>
+                </Route>
+                // トレーニング一覧
+                <Route
+                    excat
+                    path="/trainings">
+                    <Trainings/>
+                </Route>
+                // 仮メニュー選択画面
+                <Route
+                    exact
+                    path="/orders">
+                    <Orders/>
+                </Route>
+                <Route
+                    exact
+                    path="/exercises/:exercisesId/trainings"
+                    render={({match}) =>
+                        <Trainings
+                            match={match}
+                        />
+                    }
+                />
+            </Switch>
+        </Router>
+    );
 }
 
 export default App;
