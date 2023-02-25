@@ -14,6 +14,7 @@ gem "puma", "~> 5.0"
 gem 'bcrypt', '~> 3.1.7'
 gem 'database_cleaner'
 gem 'factory_bot_rails'
+gem 'rack-cors'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
