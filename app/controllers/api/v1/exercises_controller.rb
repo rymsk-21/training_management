@@ -8,7 +8,7 @@ module Api
 
         # 取得したトレーニングをJSON形式でレスポンスとして返す
         render json: {
-          exercise: exercises
+          exercises: exercises
         }, status: :ok
       end
     end

@@ -7,7 +7,7 @@ export const Trainings = ({
         <Fragment>
             トレーニング一覧
             <p>
-                exercisesIdは {match.params.exercisesId}です。
+                exercisesIdは{match.params.exercisesId}です。
             </p>
         </Fragment>
     )
