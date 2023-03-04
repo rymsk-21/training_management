@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 // components
-import { SubText } from './StyledText';
+import {SubText} from './StyledText';
 
 // constants
-import { COLORS } from '../style_constants';
+import {COLORS} from '../style_constants';
 
 const Wrapper = styled.div`
   display: flex;
@@ -36,11 +36,11 @@ const TrainingImageNode = styled.img`
 `;
 
 export const TrainingWrapper = ({
-                                training,
-                                onClickFoodWrapper,
-                                imageUrl,
-                            }) => (
-    <Wrapper onClick={() => onClickFoodWrapper(training)}>
+                                    training,
+                                    onClickTrainingWrapper,
+                                    imageUrl,
+                                }) => (
+    <Wrapper onClick={() => onClickTrainingWrapper(training)}>
         <TrainingDetail>
             {training.name}
             <DescriptionWrapper>
@@ -52,6 +52,6 @@ export const TrainingWrapper = ({
                 {training.calorie}kcal
             </CalorieWrapper>
         </TrainingDetail>
-        <TrainingImageNode src={imageUrl} />
+        <TrainingImageNode src={imageUrl}/>
     </Wrapper>
 )
