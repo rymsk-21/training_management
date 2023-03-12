@@ -30,3 +30,13 @@ export const replaceLineMenus = (params) => {
             throw e;
         })
 };
+
+export const fetchLineMenus = () => {
+    return axios.get(lineMenus)
+        .then(res => {
+            return res.data
+        })
+        .catch((e) => {
+            throw e;
+        })
+}
